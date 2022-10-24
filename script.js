@@ -19,11 +19,12 @@ function register() {
             // empurra objeto de usuário para o array
             users.push({username: inputRegisterUsername.value,
                         password: inputRegisterPassword.value}); 
-            alert("USUÁRIO CRIADO");
+            alert("Usuário criado.");
+            console.log(users)
         }
-        else alert("SENHAS NÃO COINCIDEM");
+        else alert("Senhas não conhecidem.");
     }
-    else alert("USUÁRIO JÁ EXISTENTE");
+    else alert("Usuário já existente.");
 }
 
 function login() {
@@ -37,6 +38,7 @@ function login() {
         alert("LOGIN FEITO COM SUCESSO");
     }
     else alert("USUÁRIO OU SENHA INVÁLIDOS");
+    console.log(users);
 }
 
 function logoff() {
